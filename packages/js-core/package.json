@@ -43,11 +43,11 @@
     }
   },
   "scripts": {
-    "dev": "vite build --watch --mode dev",
-    "build:app": "tsc && vite build --config app.vite.config.ts",
-    "build:website": "tsc && vite build --config website.vite.config.ts",
-    "build": "pnpm build:app && pnpm build:website",
-    "build:dev": "tsc && vite build --mode dev",
+    "dev": "node init && vite build --watch --mode dev",
+    "build:app": "node init && tsc && vite build --config app.vite.config.ts",
+    "build:website": "node init && tsc && vite build --config website.vite.config.ts",
+    "build": "node init && pnpm build:app && pnpm build:website",
+    "build:dev": "node init && tsc && vite build --mode dev",
     "go": "vite build --watch --mode dev",
     "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
     "clean": "rimraf .turbo node_modules dist coverage"

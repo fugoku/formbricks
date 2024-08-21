@@ -26,9 +26,9 @@
     }
   },
   "scripts": {
-    "dev": "vite build --watch",
-    "build": "tsc && vite build",
-    "build:dev": "pnpm build",
+    "dev": "node init && vite build --watch",
+    "build": "node init && tsc && vite build",
+    "build:dev": "node init && pnpm build",
     "go": "vite build --watch",
     "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
     "clean": "rimraf .turbo node_modules dist"
