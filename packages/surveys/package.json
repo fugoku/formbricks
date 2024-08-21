@@ -26,10 +26,10 @@
     }
   },
   "scripts": {
-    "dev": "vite build --watch --mode dev",
+    "dev": "node init && vite build --watch --mode dev",
     "serve": "serve dist -p 3003",
-    "build": "tsc && vite build",
-    "build:dev": "tsc && vite build --mode dev",
+    "build": "node init && tsc && vite build",
+    "build:dev": "node init && tsc && vite build --mode dev",
     "go": "vite build --watch --mode dev",
     "lint": "eslint src --fix --ext .ts,.js,.tsx,.jsx",
     "preview": "vite preview",

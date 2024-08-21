@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "clean": "rimraf .turbo node_modules .next",
-    "dev": "next dev -p 3000",
+    "dev": "node init && next dev -p 3000",
     "go": "next dev -p 3000",
-    "build": "next build",
-    "build:dev": "next build",
-    "start": "next start",
+    "build": "node init && next build",
+    "build:dev": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint"
   },
   "dependencies": {
